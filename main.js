@@ -1,7 +1,7 @@
 const genBtn = document.querySelector('#genBtn');
 const resetBtn = document.getElementById('reset');
 const numRows = document.getElementById('numRows');
-
+genDivs();
 genBtn.addEventListener("click", genDivs);
 resetBtn.addEventListener("click", resetGrid);
 
@@ -22,12 +22,16 @@ function genDivs () {
             row.appendChild(cell);
         }
     }
-    /*
-    let cellWidth = (100 / numRows.value);
-    row.style.width = cellWidth + "%";
-    console.log(row.style.width);
-    */
+    setCellWidth();
     container.addEventListener('mouseover', fillCell);
+}
+
+function setCellWidth () {
+    const allRows = document.getElementsByClassName("row");
+    let cellWidth = (100 / numRows.value);
+    for (let i = 0; i < allRows.length; i++) {
+        allRows[i].style.width = cellWidth + "%"
+    }
 }
 
 function fillCell (e) {

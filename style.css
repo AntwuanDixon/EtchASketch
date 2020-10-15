@@ -1,47 +1,70 @@
+h1 {
+    display: block;
+    text-align: center;
+}
+
+#options {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+button {
+    text-align: center;
+    border-color: lavender;
+    margin: 0px 5px 20px 5px;
+    height: 35px;
+    width: 130px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #2a2c2e;
+    border-radius: 4px;
+    background-color: rgb(241, 241, 241);
+}
+
 div.row {
     display: grid;
-    width: 6.25%;
-    padding-bottom: 2%;
-    margin-bottom: 2%;
+    width: 3.125%;
+    height: 100%;
 }
 
 div.gridsquare {
     position: relative;
     background-color: white;
-    border-style: solid;
-    border-color: black;
-    border: 1px, 1px, 1px, 1px;
+    border-style: dotted;
+    border-width: .005em;
+    border-color: #b3b3b3;
     width: 100%;
     height: 100%;
-    /*
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-    */
 }
 
-div.gridsquare:hover {
-    background-color: blueviolet;
+#numRows {
+    width: 60px;
+    height: 35px;
+    border-radius: 4px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
 }
 
-input {
-    color: bisque;
-    background-color: cadetblue;
+#numRowsLabel {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    padding-right: 10px; 
 }
 
 div#container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     max-width: 800px;
     height: 800px;
-    /*
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));
-    height: 800px;
-    column-gap: 2px;
-    row-gap: 2px;
-    */
-    background-color:bisque;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2px;
+    margin-top: 20px;
+    border: solid;
+    border-width: .2em;
+    border-color: #2a2c2e;
 }
