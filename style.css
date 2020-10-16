@@ -1,6 +1,16 @@
+body {
+    background-color: #f51722;
+  }
+
+main {
+    width: 100%;
+}
+
 h1 {
     display: block;
     text-align: center;
+    font-family: cursive;
+    font-size: 2.5em;
 }
 
 #options {
@@ -10,6 +20,7 @@ h1 {
     margin-top: 20px;
     margin-bottom: 20px;
     justify-content: space-between;
+    
 }
 
 button {
@@ -41,7 +52,11 @@ div.gridsquare {
     height: 100%;
 }
 
-#numRows {
+#options {
+    vertical-align: top;
+}
+
+.dropdown {
     width: 60px;
     height: 35px;
     border-radius: 4px;
@@ -49,10 +64,29 @@ div.gridsquare {
     font-size: 14px;
 }
 
-#numRowsLabel {
+
+label {
     font-family: arial, sans-serif;
-    font-size: 14px;
+    color: white;
+    font-size: 1em;
     padding-right: 10px; 
+    width: 60px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+#penColor {
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+#clickMode {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
 }
 
 div#container {

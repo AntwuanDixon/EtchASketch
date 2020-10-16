@@ -8,13 +8,22 @@
     <h1>Etch-A-Sketch</h1>
     <div id="container"></div>
     <section id="options">
-        <button id="genBtn">Generate Rows</button>
-        <label for="numRows" id="numRowsLabel">Number of Rows</label>
-        <select name="numRows" id="numRows">
+        <label for="clickMode" class="option-label">Click Mode</label>
+        <input type="checkbox" id="clickMode" name="clickMode" value="Click">
+        <label for="penColor" class="option-label">Pen Color</label>
+        <select name="penColor" id="penColor">
+            <option value="Black">Black</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Rainbow">Rainbow</option>
+        </select>
+        <label for="numRows" class="option-label">Number of Rows</label>
+        <select name="numRows" id="numRows" class="dropdown">
             <option value="16">16</option>
             <option value="32">32</option>
             <option value="64">64</option>
         </select>
+        <button id="genBtn">Generate Rows</button>
         <button id="reset">Reset</button>
     </section>
 </main>
