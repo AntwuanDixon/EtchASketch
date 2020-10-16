@@ -10,6 +10,7 @@ h1 {
     display: block;
     text-align: center;
     font-family: cursive;
+    color: white;
     font-size: 2.5em;
 }
 
@@ -52,10 +53,6 @@ div.gridsquare {
     height: 100%;
 }
 
-#options {
-    vertical-align: top;
-}
-
 .dropdown {
     width: 60px;
     height: 35px;
@@ -63,7 +60,6 @@ div.gridsquare {
     font-family: arial, sans-serif;
     font-size: 14px;
 }
-
 
 label {
     font-family: arial, sans-serif;
